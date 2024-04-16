@@ -47,7 +47,7 @@ public class Sound
 
     int[] newSamples = new int[samples.length - count];
     for (int i = 0; i < newSamples.length; i++){
-      newSamples[i] = sammples[i+count];
+      newSamples[i] = samples[i+count];
     }
     samples = newSamples;
   }
