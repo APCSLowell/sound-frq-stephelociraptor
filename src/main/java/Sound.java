@@ -19,15 +19,15 @@ public class Sound
     int count = 0; 
     for (int i = 0; i < samples.length; i++){
       if (samples[i] > limit){
-        samples[i] = limit; 
+        samples[i] = limit;
         count++;
       }
-      else if (samples[i] < (-1*limit)){
-        samples[i] = (-1*limit);
+      else if (samples[i] < -limit){
+        samples[i] = -limit; 
         count++;
       }
     }
-    return count;
+    return count; 
   }
 
 
@@ -41,15 +41,15 @@ public class Sound
   {
     /* to be implemented in part (b) */
     int count = 0; 
-    while (samples[count]==0){
+    while (samples[count] == 0){
       count++;
     }
 
-    int[] newSamples = new int[samples.length - count];
-    for (int i = 0; i < newSamples.length; i++){
+    int[] newSamples[i] = samples[i+count];
+    for(int i = 0; i < newSamples.length; i++){
       newSamples[i] = samples[i+count];
     }
-    samples = newSamples;
   }
+    samples = newSamples;
   
 }
